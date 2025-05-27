@@ -1,0 +1,257 @@
+/* header */
+
+* {
+    /* bộ chọn chung cho tất cả các thẻ */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.header {
+    width: 1800px;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Hiển thị bóng */
+}
+
+.inner-head {
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.inner-logo {
+    display: flex;
+    margin-left: 40px;
+}
+
+.head-title {
+    color: #333333;
+    font-weight: bold;
+}
+
+.inner-menu {
+    height: 100%;
+    margin-right: 200px;
+}
+
+.inner-menu .menu-list {
+    display: flex;
+    list-style: none;
+    position: relative;
+    top: 7px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.menu-item::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.menu-item a:hover {
+    color: #ff8f20;
+}
+
+.menu-item a i {
+    margin-right: 5px;
+}
+
+.inner-icon {
+    margin-right: 50px;
+    display: flex;
+}
+
+.inner-logo .head-logo {
+    height: 100px;
+    width: 100px;
+}
+
+.icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.inner-icon a i {
+    font-size: 22px;
+    color: #333333;
+}
+
+.inner-icon .icon-wrap a {
+    text-decoration-line: none;
+    font-size: 13px;
+    color: #333333;
+    position: relative;
+    top: 0px;
+    font-weight: 500;
+}
+
+.inner-head {
+    display: flex;
+    justify-content: space-between;
+    /* Các thành phần được căn trái và phải */
+    align-items: center;
+    /* Căn các thành phần theo chiều dọc */
+}
+
+.inner-logo {
+    display: flex;
+    align-items: center;
+}
+
+.inner-logo {
+    display: flex;
+    align-items: center;
+}
+
+.inner-menu {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.inner-icon {
+    display: flex;
+    align-items: center;
+}
+
+.item-list {
+    display: none;
+    padding: 0;
+    flex-direction: column;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 25px;
+    top: 60px;
+}
+
+.menu-item:hover .item-list {
+    display: flex;
+}
+
+.item-list li {
+    padding-top: 5px;
+    list-style: none;
+    border-bottom: 1px solid #efefef;
+    padding: 10px 10px;
+}
+
+.item-list li a {
+    list-style: none;
+    width: 100%;
+    font-size: 15px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.item-list li i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+
+/* thêm tt sinh viên */
+
+.section-two {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.inner-main {
+    border-radius: 10px;
+    border: 1px solid #efefef;
+}
+
+.section-two .section-two-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: -webkit-linear-gradient(-30deg, #f57f20, #d62b08 100%);
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.section-two-title h2 {
+    font-size: 25px;
+    font-weight: 700px;
+    color: #fff;
+}
+
+.inner-head p {
+    font-size: 12px;
+}
+
+.inner-body .input1 {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 4px;
+}
+
+.input-dau {
+    padding-right: 10px;
+}
+
+.input-sau {
+    padding-left: 10px;
+}
+
+.inner-body .input-nd {
+    height: 55px;
+    width: 100%;
+}
+
+.btn-dk {
+    margin-top: 20px;
+    border: 2px solid;
+    color: #fff;
+    background: -webkit-linear-gradient(-30deg, #f57f20, #d62b08 100%);
+    font-size: 16px;
+    padding: 12px 20px;
+    font-weight: bolder;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.btn-dk:hover {
+    background: transparent;
+    color: #ff8f20;
+    border: 2px solid #ff8f20;
+}
+
+.last-margin {
+    margin-top: 15px;
+}
